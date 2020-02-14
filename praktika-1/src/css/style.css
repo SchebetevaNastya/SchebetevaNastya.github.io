@@ -130,8 +130,11 @@ section {
   height: 7rem;
 }
 .logo {
-  height: 7rem;
-  line-height: 7rem;
+  height: 10rem;
+  line-height: 10rem;
+}
+.logo img {
+  height: 10rem;
 }
 .phone-block {
   text-align: right;
@@ -177,6 +180,7 @@ section {
 .feature-img img {
   display: block;
   margin: 0 auto;
+  height: 7rem;
 }
 .slick-active {
   outline: none;
