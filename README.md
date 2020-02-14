@@ -7,4 +7,6 @@
 [мой первый калечный сайт](https://schebetevanastya.github.io/lesson_12/ "что-то с чем-то"
 
 
-# миша какашка
+# второй сайт
+
+[автоматезированная штукатурка стен](https://SchebetevaNastya.github.io/praktika-1/src/
