@@ -9,4 +9,4 @@
 
 # второй сайт
 
-[автоматезированная штукатурка стен](https://SchebetevaNastya.github.io/praktika-7/src/
+[автоматезированная штукатурка стен](https://SchebetevaNastya.github.io/praktika-9/src/
