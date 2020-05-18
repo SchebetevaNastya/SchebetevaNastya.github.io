@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+   </script>
+
+
+   <title>PIANOFORTE</title>
+</head>
+<body>
+<main class="main">
+   <header class="header">
+      <div class="header__menu__bg"></div>
+      <div class="container">
+         <div class="header__wrapper">
+            <div class="header__logo">
+               <a class="logo" href="#" role="link">
+                  <img src="img/logo/logo.png" alt="PIANOFORTE">
+                  <p>Pianoforte</p>
+               </a>
+            </div>
+            <div class="header__main">
+               <div class="header__main__row__navigation">
+                  <nav class="header__navigation">
+                     <ul class="header__navigation__list">
+                        <li class="header__navigation__list__item">
+                           <a href="#">Покупка и продажа пианино</a>
+                        </li>
+                        <li class="header__navigation__list__item">
+                           <a href="#">Полезная информация</a>
+                        </li>
+                        <li class="header__navigation__list__item">
+                           <a href="#">О компании</a>
+                        </li>
+                        <li class="header__navigation__list__item">
+                           <a href="#">Контакты</a>
+                        </li>
+                        <li class="header__navigation__list__item header__navigation__phone">
+                           <a class="header__navigation__phone__link" href="tel:+79528658161">
+                              (495) <span>923 32 32</span>
+                           </a>
+                           <a class="phone__img" href="tel:+79528658161">
+                              <img src="img/phone/phone.png" alt="phone">
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <button class="header__mobile-menu">
+                     <span></span>
+                  </button>
+                  <!--<div class="header__navigation__phone">
+
+                  </div>-->
+
+               </div>
+               <!--мобильное меню-->
+               <div class="mobile__navigation">
+                  <div class="mobile__navigation__menu">
+                     <ul class="mobile__navigation__menu__list">
+                        <li class="mobile__navigation__menu__list__item">
+                           <a href="#">Покупка и продажа пианино</a>
+                        </li>
+                        <li class="mobile__navigation__menu__list__item">
+                           <a href="#">Полезная информация</a>
+                        </li>
+                        <li class="mobile__navigation__menu__list__item">
+                           <a href="#">О компании</a>
+                        </li>
+                        <li class="mobile__navigation__menu__list__item">
+                           <a href="#">Контакты</a>
+                        </li>
+                        <li class="mobile__navigation__menu__list__item">
+                           <a class="header__navigation__phone__link" href="tel:+79528658161">
+                              (495) <span>923 32 32</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="header__main__row__menu">
+                  <div class="header__services">
+                     <a class="header__services__link" href="#">Услуги
+                     </a>
+                     <div class="header__services__img">
+                        <img src="img/main/uslugi.png" alt="стрелка">
+                     </div>
+                  </div>
+                  <form class="header__search" action="action_page.php">
+                     <button class="header__search__img" type="submit">
+                        <img src="img/main/search.png" alt="лупа">
+                     </button>
+                     <input class="header__search__input" type="text" placeholder="Поиск" name="search">
+                  </form>
+                  <div class="header__favorites">
+                     <a class="button header__favorites__btn add_fav" rel="sidebar" href=""
+                        onclick="return bookmark(this);">
+                        <img src="img/main/Favorites.png" alt="">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <section class="banner">
+      <div class="banner__slider">
+         <div class="banner__block banner__block-1">
+            <div class="container">
+               <div class="banner__block__text">
+                  <h3 class="banner__block__text__header">Перевозка и утилизация</h3>
+                  <hr class="banner__block__text__line">
+                  <ul class="banner__block__text__list">
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Аккуратно и
+                        бережно относимся как к инструменту так и к
+                        окружающим предметам
+                     </li>
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Выезд в
+                        день обращения
+                     </li>
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Фиксированная
+                        цена и гарантия на все работы
+                     </li>
+                  </ul>
+                  <button class="banner__block__text__btn">заказать прямо сейчас</button>
+               </div>
+            </div>
+         </div>
+         <div class="banner__block banner__block-2">
+            <div class="container">
+               <div class="banner__block__text">
+                  <h3 class="banner__block__text__header">Реставрация и ремонт</h3>
+                  <hr class="banner__block__text__line">
+                  <ul class="banner__block__text__list">
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Используем
+                        современные материалы и оборудование
+                     </li>
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Применяем
+                        новые технологии
+                     </li>
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Фиксированная
+                        цена и гарантия на все работы
+                     </li>
+                  </ul>
+                  <button class="banner__block__text__btn">заказать прямо сейчас</button>
+               </div>
+            </div>
+         </div>
+         <div class="banner__block banner__block-3">
+            <div class="container">
+               <div class="banner__block__text">
+                  <h3 class="banner__block__text__header">Такелажные работы</h3>
+                  <hr class="banner__block__text__line">
+                  <ul class="banner__block__text__list">
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Все
+                        инструменты и приспособления имеют паспорт качества
+                     </li>
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Работают
+                        только аттестованные такелажники и
+                        стропальщики
+                     </li>
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Фиксированная
+                        цена и гарантия на все работы
+                     </li>
+                  </ul>
+                  <button class="banner__block__text__btn">заказать прямо сейчас</button>
+               </div>
+            </div>
+         </div>
+         <div class="banner__block banner__block-4">
+            <div class="container">
+               <div class="banner__block__text">
+                  <h3 class="banner__block__text__header">Настройка</h3>
+                  <hr class="banner__block__text__line">
+                  <ul class="banner__block__text__list">
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Настройщики
+                        и фортепианные мастера с огромным опытом
+                     </li>
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Бесплатная
+                        экспертиза по телефону
+                     </li>
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Фиксированная
+                        цена и гарантия на все работы
+                     </li>
+                  </ul>
+                  <button class="banner__block__text__btn">заказать прямо сейчас</button>
+               </div>
+            </div>
+         </div>
+         <div class="banner__block banner__block-5">
+            <div class="container">
+               <div class="banner__block__text">
+                  <h3 class="banner__block__text__header">Такелажные работы</h3>
+                  <hr class="banner__block__text__line">
+                  <ul class="banner__block__text__list">
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">На любое
+                        купленное у нас пианино дается гарантия
+                     </li>
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Все
+                        инструменты находящиеся у нас прошли
+                        профессиональный осмотр
+                     </li>
+                     <li class="banner__block__text__list__link"><img class="banner__block__text__list__link__img"
+                                                                      src="img/slider-baner/link.png" alt="">Фортепиано
+                        на заказ в кратчайшие сроки
+                     </li>
+                  </ul>
+                  <button class="banner__block__text__btn">заказать прямо сейчас</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="worth">
+      <div class="container">
+         <div class="section__header worth__header">
+            <h1>наши достоинства</h1>
+         </div>
+         <div class="worth__content">
+            <div class="worth__content__block">
+               <div class="worth__content__block__img worth__content__block__img__1">
+                  <img src="img/worth/1.png" alt="">
+               </div>
+               <p class="worth__content__block__text">Соотношение цена/качество</p>
+            </div>
+            <div class="worth__content__block">
+               <div class="worth__content__block__img">
+                  <img src="img/worth/2.png" alt="">
+               </div>
+               <p class="worth__content__block__text">гарантия на все работы</p>
+            </div>
+            <div class="worth__content__block">
+               <div class="worth__content__block__img">
+                  <img src="img/worth/3.png" alt="">
+               </div>
+               <p class="worth__content__block__text">работаем без выходных</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="facts">
+      <div class="container">
+         <div class="facts__block">
+            <p class="facts__block__data">05 мая 2014</p>
+            <h3 class="facts__block__header">Интересные факты</h3>
+            <div class="facts__block__content">
+               <div class="facts__block__content__img">
+                  <img src="img/facts/fact.jpg" alt="">
+               </div>
+               <p class="facts__block__content__text">Для изготовления такой продукции используются только качественные
+                  материалы, чтобы эта «визитка» организации выдерживала воздействие ветра, дождя, солнца, мороза.
+                  Обычно ГБОУ (образовательные учреждения), Советы депутатов, Управы, медицинские учреждения -
+                  заказывают вывески по следующим параметрам: 80х60 см, металлический профиль, аппликация пленками
+                  Oracal, антивандальное защитное акриловое стекло. Эти таблички надежны, практичны и относительно
+                  недороги (мало ли когда снова "спустят" приказ о переименовании Учреждения). Технология изготовления
+                  "обкатана" годами совместной работы с "бюджетниками" - именно такое решение оказалось самым
+                  востребованным и практичным</p>
+            </div>
+         </div>
+         <hr class="facts__line">
+         <div class="facts__block">
+            <p class="facts__block__data">05 мая 2014</p>
+            <h3 class="facts__block__header">Интересные факты</h3>
+            <div class="facts__block__content">
+               <div class="facts__block__content__img">
+                  <img src="img/facts/fact.jpg" alt="">
+               </div>
+               <p class="facts__block__content__text">Для изготовления такой продукции используются только качественные
+                  материалы, чтобы эта «визитка» организации выдерживала воздействие ветра, дождя, солнца, мороза.
+                  Обычно ГБОУ (образовательные учреждения), Советы депутатов, Управы, медицинские учреждения -
+                  заказывают вывески по следующим параметрам: 80х60 см, металлический профиль, аппликация пленками
+                  Oracal, антивандальное защитное акриловое стекло. Эти таблички надежны, практичны и относительно
+                  недороги (мало ли когда снова "спустят" приказ о переименовании Учреждения). Технология изготовления
+                  "обкатана" годами совместной работы с "бюджетниками" - именно такое решение оказалось самым
+                  востребованным и практичным</p>
+            </div>
+         </div>
+         <hr class="facts__line facts__line-1">
+      </div>
+   </section>
+
+   <section class="company">
+      <div class="container">
+         <div class="section__header company__header">
+            <h1>О компании</h1>
+         </div>
+         <div class="company__text">
+            <p>Дело в том, что настройка фортепиано – дело для настоящего профессионала. Настраивать пианино значительно
+               сложнее, чем другие распространённые музыкальные инструменты, такие, как, например, гитара. Для того
+               чтобы выполнять эту работу, настройщик должен не только обладать хорошим музыкальным слухом, но и иметь
+               большой опыт.<br>
+                 Ведь для того, чтобы только приступить к этой долгой процедуре, требующей кропотливого труда и
+               сосредоточенности, уже придётся сделать многое: аккуратно снять деревянные деки, под которыми скрывается
+               требующий настройки механизм. При этом нужно проследить, чтобы не осталось механических повреждений ни на
+               самом инструменте, ни на окружающих его предметах.<br> 
+                 Наша фирма  занимается настройкой, ремонтом пианино в Москве и области. Стоимость от 1800 рублей. Эта
+               услуга в нашем городе достаточно востребована, и конкуренция высока, но работа нашей фирмы заслуживает
+               исключительно положительные отзывы. </p>
+            <strong>Вас ждёт:<br>
+               Качественный сервис — Фиксированные цены — Оперативный выезд!</strong>
+         </div>
+      </div>
+   </section>
+
+   <section class="reviews">
+      <div class="container reviews__container">
+         <div class="section__header reviews__header">
+            <h1>отзывы</h1>
+         </div>
+         <div class="reviews__slider">
+
+            <div class="reviews__slider__block">
+               <div class="reviews__slider__block__icon">
+                  <div class="reviews__slider__block__icon__img">
+                     <img src="img/reviews/icon.jpg" alt="">
+                  </div>
+                  <p class="reviews__slider__block__icon__name">Джуди Хоппс</p>
+               </div>
+               <div class="reviews__slider__block__text">
+                  <p>The staff are all very knowledgeable and take the time to get to know you personally. They get you
+                     very energetically and are always nice and polite. And I can't forget to mention that the office is
+                     the best looking that I've ever seen. Very modern and artsy.</p>
+               </div>
+            </div>
+
+            <div class="reviews__slider__block">
+               <div class="reviews__slider__block__icon">
+                  <div class="reviews__slider__block__icon__img">
+                     <img src="img/reviews/icon.jpg" alt="">
+                  </div>
+                  <p class="reviews__slider__block__icon__name">Джуди Хоппс</p>
+               </div>
+               <div class="reviews__slider__block__text">
+                  <p>The staff are all very knowledgeable and take the time to get to know you personally. They get you
+                     very energetically and are always nice and polite. And I can't forget to mention that the office is
+                     the best looking that I've ever seen. Very modern and artsy.</p>
+               </div>
+            </div>
+
+            <div class="reviews__slider__block">
+               <div class="reviews__slider__block__icon">
+                  <div class="reviews__slider__block__icon__img">
+                     <img src="img/reviews/icon.jpg" alt="">
+                  </div>
+                  <p class="reviews__slider__block__icon__name">Джуди Хоппс</p>
+               </div>
+               <div class="reviews__slider__block__text">
+                  <p>The staff are all very knowledgeable and take the time to get to know you personally. They get you
+                     very energetically and are always nice and polite. And I can't forget to mention that the office is
+                     the best looking that I've ever seen. Very modern and artsy.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="footer">
+      <div class="container">
+
+         <div class="footer__top">
+            <div class="footer__top__main">
+               <nav class="footer__top__main__navigation footer__top__main__navigation-1">
+                  <ul class="footer__top__main__navigation__list footer__top__main__navigation__list-1">
+                     <li class="footer__top__main__navigation__list__item">
+                        <a href="#">Покупка и продажа пианино</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item">
+                        <a href="#">Полезная информация</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item">
+                        <a href="#">О компании</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item">
+                        <a href="#">Контакты</a>
+                     </li>
+                  </ul>
+               </nav>
+               <nav class="footer__top__main__navigation footer__top__main__navigation-2">
+                  <ul class="footer__top__main__navigation__list footer__top__main__navigation__list-2">
+                     <li class="footer__top__main__navigation__list__item footer__top__main__navigation__list__item-2">
+                        <a href="#">Главная</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item footer__top__main__navigation__list__item-2">
+                        <a href="#">Реставрация</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item footer__top__main__navigation__list__item-2">
+                        <a href="#">Перевозка</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item footer__top__main__navigation__list__item-2">
+                        <a href="#">Такелажные работы</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item footer__top__main__navigation__list__item-2">
+                        <a href="#">Настройка</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+
+            <div class="footer__top__right">
+               <div class="footer__top__right__logo">
+                  <a class="footer__top__right__logo__link" href="#" role="link">
+                     <img src="img/logo/logo.png" alt="PIANOFORTE">
+                     <p>Pianoforte</p>
+                  </a>
+               </div>
+               <div class="footer__top__right__phone">
+                  <a class="footer__top__right__phone__link" href="tel:+79528658161">
+                     (495) <span>923 32 32</span>
+                  </a>
+                  <a class="footer__top__right__phone__img" href="tel:+79528658161">
+                     <img src="img/phone/phone.png" alt="phone">
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer__bottom">
+            <p class="footer__bottom__text">© Все права защищены, 2017 г.</p>
+            <img src="img/footer/bottom.png" alt="" class="footer__bottom__img">
+         </div>
+
+      </div>
+      <div class="footer__bg"></div>
+   </section>
+
+</main>
+
+
+<!-- JavaScript -->
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<!-- подключаем стили slick-slider -->
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<!-- подключаем библиотеку slick-slider -->
+<script src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.banner__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+        $('.reviews__slider').slick({
+            prevArrow: '<button type="button" class="reviews__slider-btn reviews__prev-btn"><img src="img/reviews/prev.png"></button>',
+            nextArrow: '<button type="button" class="reviews__slider-btn reviews__next-btn"><img src="img/reviews/next.png"></button>'
+        });
+        /*модальные окна*/
+        $('.header__mobile-menu').on('click', function (e) {
+            e.preventDefault();
+            $('.mobile__navigation').slideToggle();
+            $(this).toggleClass('header__mobile-menu-active');
+        })
+    });
+</script>
+
+</body>
+</html>
