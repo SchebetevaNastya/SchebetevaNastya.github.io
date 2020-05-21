@@ -946,7 +946,7 @@ img {
           .footer__top__main__navigation-1 {
             margin-top: 20px; } }
       .footer__top__main__navigation-2 {
-        margin-top: 45px; }
+         }
         @media screen and (max-width: 390px) {
           .footer__top__main__navigation-2 {
             margin-top: 0; } }
