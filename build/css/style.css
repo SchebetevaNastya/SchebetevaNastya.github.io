@@ -548,23 +548,23 @@ img {
             margin-left: 10%;
             margin-bottom: 0; } }
   .banner__block-1 {
-    background: url("../../img/slider-baner/slider-1.jpg") center no-repeat;
+    background: url("../img/slider-baner/slider-1.jpg") center no-repeat;
     -webkit-background-size: cover;
             background-size: cover; }
   .banner__block-2 {
-    background: url("../../img/slider-baner/slider-2.jpg") center no-repeat;
+    background: url("../img/slider-baner/slider-2.jpg") center no-repeat;
     -webkit-background-size: cover;
             background-size: cover; }
   .banner__block-3 {
-    background: url("../../img/slider-baner/slider-3.jpg") center no-repeat;
+    background: url("../img/slider-baner/slider-3.jpg") center no-repeat;
     -webkit-background-size: cover;
             background-size: cover; }
   .banner__block-4 {
-    background: url("../../img/slider-baner/slider-4.jpg") center no-repeat;
+    background: url("../img/slider-baner/slider-4.jpg") center no-repeat;
     -webkit-background-size: cover;
             background-size: cover; }
   .banner__block-5 {
-    background: url("../../img/slider-baner/slider-5.jpg") center no-repeat;
+    background: url("../img/slider-baner/slider-5.jpg") center no-repeat;
     -webkit-background-size: cover;
             background-size: cover; }
 
@@ -764,7 +764,7 @@ img {
 .reviews__container {
   height: 400px;
   padding-top: 35px;
-  background: #400c7a url("../../img/reviews/piano.png") bottom -100px left 510px no-repeat; }
+  background: #400c7a url("../img/reviews/piano.png") bottom -100px left 510px no-repeat; }
   @media screen and (max-width: 575px) {
     .reviews__container {
       height: auto; } }
