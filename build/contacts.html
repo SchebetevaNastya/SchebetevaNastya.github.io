@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+   </script>
+
+
+   <title>PIANOFORTE</title>
+</head>
+<body>
+<main class="main">
+   <header class="header">
+      <div class="header__menu__bg"></div>
+      <div class="container">
+         <div class="header__wrapper">
+            <div class="header__logo">
+               <a class="logo" href="index.html" role="link">
+                  <img src="img/logo/logo.png" alt="PIANOFORTE">
+                  <p>Pianoforte</p>
+               </a>
+            </div>
+            <div class="header__main">
+               <div class="header__main__row__navigation">
+                  <nav class="header__navigation">
+                     <ul class="header__navigation__list">
+                        <li class="header__navigation__list__item">
+                           <a href="catalog.html">Покупка и продажа пианино</a>
+                        </li>
+                        <li class="header__navigation__list__item">
+                           <a href="%20information.html">Полезная информация</a>
+                        </li>
+                        <li class="header__navigation__list__item">
+                           <a href="#">О компании</a>
+                        </li>
+                        <li class="header__navigation__list__item">
+                           <a href="#">Контакты</a>
+                        </li>
+                        <li class="header__navigation__list__item header__navigation__phone">
+                           <a class="header__navigation__phone__link" href="tel:+79528658161">
+                              (495) <span>923 32 32</span>
+                           </a>
+                           <a class="phone__img" href="tel:+79528658161">
+                              <img src="img/phone/phone.png" alt="phone">
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+                  <button class="header__mobile-menu">
+                     <span></span>
+                  </button>
+                  <!--<div class="header__navigation__phone">
+
+                  </div>-->
+
+               </div>
+               <!--мобильное меню-->
+               <div class="mobile__navigation">
+                  <div class="mobile__navigation__menu">
+                     <ul class="mobile__navigation__menu__list">
+                        <li class="mobile__navigation__menu__list__item">
+                           <a href="catalog.html">Покупка и продажа пианино</a>
+                        </li>
+                        <li class="mobile__navigation__menu__list__item">
+                           <a href="%20information.html">Полезная информация</a>
+                        </li>
+                        <li class="mobile__navigation__menu__list__item">
+                           <a href="#">О компании</a>
+                        </li>
+                        <li class="mobile__navigation__menu__list__item">
+                           <a href="#">Контакты</a>
+                        </li>
+                        <li class="mobile__navigation__menu__list__item">
+                           <a class="header__navigation__phone__link" href="tel:+79528658161">
+                              (495) <span>923 32 32</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="header__main__row__menu">
+                  <div class="header__services">
+                     <a class="header__services__link" href="#">Услуги
+                     </a>
+                     <div class="header__services__img">
+                        <img src="img/main/uslugi.png" alt="стрелка">
+                     </div>
+                  </div>
+                  <form class="header__search" action="action_page.php">
+                     <button class="header__search__img" type="submit">
+                        <img src="img/main/search.png" alt="лупа">
+                     </button>
+                     <input class="header__search__input" type="text" placeholder="Поиск" name="search">
+                  </form>
+                  <div class="header__favorites">
+                     <a class="button header__favorites__btn add_fav" rel="sidebar" href=""
+                        onclick="return bookmark(this);">
+                        <img src="img/main/Favorites.png" alt="">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <section class="contacts">
+      <div class="container">
+         <div class="section__header contacts__header">
+            <h1>Контакты</h1>
+         </div>
+         <div class="contacts__address">
+            <div class="contacts__address__map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1123.6217125491892!2d37.57075904014807!3d55.71952166912388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b82d2de7727%3A0x48b2442756958f29!2z0JrQvtC80YHQvtC80L7Qu9GM0YHQutC40Lkg0L_RgC4sIDgwLCDQnNC-0YHQutCy0LAsIDExOTA0OA!5e0!3m2!1sru!2sru!4v1590490538834!5m2!1sru!2sru"
+                       width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                       aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="contacts__address__text">
+               <p class="contacts__address__text__item">656056, Россия, г. Москва, пр. Комсомольский, 80а, офис 219,
+                  215, 214</p>
+               <div class="contacts__address__text-bottom">
+                  <div class="contacts__address__text-bottom-left">
+                     <p class="contacts__address__text__item contacts__address__text__item-phone">Телефон:</p>
+                     <p class="contacts__address__text__item">Email: </p>
+                     <p class="contacts__address__text__item">Контактное лицо:</p>
+                     <p class="contacts__address__text__item">Мы работаем:</p>
+                  </div>
+                  <div class="contacts__address__text-bottom-right">
+                     <p class="contacts__address__text__reply">8 (495) 923 32 32<br>8 (904) 214-83-76</p>
+                     <p class="contacts__address__text__reply">pianoforte@mail.ru</p>
+                     <p class="contacts__address__text__reply">Дмитрий</p>
+                     <p class="contacts__address__text__reply">пн-пт с 10-00 - 18-00 <br>сб. с 10-00 -16-00 <br>вс. с 10-00 - 14-00</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="contacts__form">
+            <div class="section__header contacts__form__header">
+               <h1>Обратная связь</h1>
+            </div>
+            <form class="contacts__form__connection" action="check.php" method="POST">
+               <div class="contacts__form__connection__top">
+                  <div class="contacts__form__connection__left">
+                     <input class="contacts__form__connection__left__input" type="text" name="name" placeholder="Представьтесь*">
+                     <input class="contacts__form__connection__left__input" type="text" name="email" placeholder="Email*">
+                     <input class="contacts__form__connection__left__input" type="text" name="theme" placeholder="Тема">
+                  </div>
+                  <div class="contacts__form__connection__right">
+                     <textarea class="contacts__form__connection__right__input" name="message" cols="30" rows="5" placeholder="Ваше сообщение"></textarea>
+                  </div>
+               </div>
+               <button class="contacts__form__connection__btn" type="submit">Отправить</button>
+            </form>
+
+         </div>
+      </div>
+   </section>
+
+   <section class="footer">
+      <div class="container">
+
+         <div class="footer__top">
+            <div class="footer__top__main">
+               <nav class="footer__top__main__navigation footer__top__main__navigation-1">
+                  <ul class="footer__top__main__navigation__list footer__top__main__navigation__list-1">
+                     <li class="footer__top__main__navigation__list__item">
+                        <a href="catalog.html">Покупка и продажа пианино</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item">
+                        <a href="%20information.html">Полезная информация</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item">
+                        <a href="#">О компании</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item">
+                        <a href="#">Контакты</a>
+                     </li>
+                  </ul>
+               </nav>
+               <nav class="footer__top__main__navigation footer__top__main__navigation-2">
+                  <ul class="footer__top__main__navigation__list footer__top__main__navigation__list-2">
+                     <li class="footer__top__main__navigation__list__item footer__top__main__navigation__list__item-2">
+                        <a href="index.html">Главная</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item footer__top__main__navigation__list__item-2">
+                        <a href="#">Реставрация</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item footer__top__main__navigation__list__item-2">
+                        <a href="#">Перевозка</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item footer__top__main__navigation__list__item-2">
+                        <a href="#">Такелажные работы</a>
+                     </li>
+                     <li class="footer__top__main__navigation__list__item footer__top__main__navigation__list__item-2">
+                        <a href="#">Настройка</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+
+            <div class="footer__top__right">
+               <div class="footer__top__right__logo">
+                  <a class="footer__top__right__logo__link" href="index.html" role="link">
+                     <img src="img/logo/logo.png" alt="PIANOFORTE">
+                     <p>Pianoforte</p>
+                  </a>
+               </div>
+               <div class="footer__top__right__phone">
+                  <a class="footer__top__right__phone__link" href="tel:+79528658161">
+                     (495) <span>923 32 32</span>
+                  </a>
+                  <a class="footer__top__right__phone__img" href="tel:+79528658161">
+                     <img src="img/phone/phone.png" alt="phone">
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="footer__bottom">
+            <p class="footer__bottom__text">© Все права защищены, 2017 г.</p>
+            <img src="img/footer/bottom.png" alt="" class="footer__bottom__img">
+         </div>
+
+      </div>
+      <div class="footer__bg"></div>
+   </section>
+
+</main>
+
+
+<!-- JavaScript -->
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<!-- подключаем стили slick-slider -->
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<!-- подключаем библиотеку slick-slider -->
+<script src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        /*модальные окна*/
+        $('.header__mobile-menu').on('click', function (e) {
+            e.preventDefault();
+            $('.mobile__navigation').slideToggle();
+            $(this).toggleClass('header__mobile-menu-active');
+        })
+    });
+</script>
+
+</body>
+</html>
